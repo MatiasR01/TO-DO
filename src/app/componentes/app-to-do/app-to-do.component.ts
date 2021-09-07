@@ -10,8 +10,7 @@ export class AppTODOComponent implements OnInit {
 
   todo2!:todo[];
 
-  input:string = "";
-  
+  inputTodo:string = "";
   constructor() { }
 
   ngOnInit(): void {
@@ -37,12 +36,12 @@ export class AppTODOComponent implements OnInit {
     })
   } 
 
-  añadir () {
+  addTodo () {
     this.todo2.push({
-      content: this.input,
+      content: this.inputTodo,
       completed: false
     });
 
-    this.input = "";
+    this.inputTodo = "";
   }
 }
