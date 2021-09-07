@@ -11,6 +11,7 @@ export class AppTODOComponent implements OnInit {
   todo2!:todo[];
 
   input:string = "";
+  
   constructor() { }
 
   ngOnInit(): void {
