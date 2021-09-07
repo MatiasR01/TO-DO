@@ -1,6 +1,6 @@
 <div class="to-do">
     <form (submit)="añadir">
-        <input type="text" name="input-texto" class="todo-input" [(ngModel)]="inputTodo"/>
+        <input type="text" name="input-texto" class="todo-input" [(ngModel)]="input"/>
         <input type="submit" value="añadir" class="todo-submit"/>
     </form>
     <div *ngFor="let todo of todo2; let i = index;" class="todo {{ todo.completed ? 'done' : ''}}">
