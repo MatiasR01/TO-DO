@@ -13,7 +13,8 @@ import { TodosComponent } from './componentes/todos/todos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
