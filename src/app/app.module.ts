@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppTODOComponent } from './componentes/app-to-do/app-to-do.component';
+import { TodosComponent } from './componentes/todos/todos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppTODOComponent
+    TodosComponent
   ],
   imports: [
     BrowserModule,

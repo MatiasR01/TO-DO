@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { todo } from '../../Modelos/todo';
 
 @Component({
-  selector: 'app-to-do',
-  templateUrl: './app-to-do.component.html',
-  styleUrls: ['./app-to-do.component.css']
+  selector: 'app-todos',
+  templateUrl: './todos.component.html',
+  styleUrls: ['./todos.component.css']
 })
-export class AppTODOComponent implements OnInit {
+export class TodosComponent implements OnInit {
+
 
   todo2!:todo[];
 
@@ -26,7 +27,6 @@ export class AppTODOComponent implements OnInit {
 
 
     ]
-
   }
 
   toggleDone (id:number) {
