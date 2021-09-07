@@ -10,6 +10,7 @@ export class AppTODOComponent implements OnInit {
 
   todo2!:todo[];
 
+  input:string = "";
   constructor() { }
 
   ngOnInit(): void {
@@ -28,4 +29,19 @@ export class AppTODOComponent implements OnInit {
 
   }
 
+  toggleDone (id:number) {
+    this.todo2.map((v,i) => {
+      if (i == id) v.completed = !v.completed;
+      return v;
+    })
+  } 
+
+  añadir () {
+    this.todo2.push({
+      content: this.input,
+      completed: false
+    });
+
+    this.input = "";
+  }
 }
