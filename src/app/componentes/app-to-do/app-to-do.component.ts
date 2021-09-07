@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { todo } from './../../Modelos/modelo';
 
 @Component({
-  selector: 'porque la ejecución de scripts está deshabilitada en este sistema',
+  selector: 'app-to-do',
   templateUrl: './app-to-do.component.html',
   styleUrls: ['./app-to-do.component.css']
 })
