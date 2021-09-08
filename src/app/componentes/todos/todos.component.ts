@@ -27,13 +27,17 @@ export class TodosComponent implements OnInit {
     })
   } 
 
-  addTodo () {
+  agregar () {
     this.todo2.push({
       content: this.inputTodo,
       completed: false
     });
 
     this.inputTodo = "";
+  }
+
+  borrar(id:number){
+    this.todo2 = this.todo2.filter((v, i) => i !== id);
   }
 
   
