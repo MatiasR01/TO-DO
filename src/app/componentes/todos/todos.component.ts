@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PollingWatchKind } from 'typescript';
 import { todo } from '../../Modelos/todo';
 
 @Component({
@@ -6,6 +7,7 @@ import { todo } from '../../Modelos/todo';
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.css']
 })
+
 export class TodosComponent implements OnInit {
 
 
@@ -33,4 +35,7 @@ export class TodosComponent implements OnInit {
 
     this.inputTodo = "";
   }
+
+  
 }
+
