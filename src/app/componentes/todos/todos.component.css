@@ -49,13 +49,44 @@
 
 	background-color: #34DF68;
 	color: #161A17;
-	margin: 10px 75px;
+	
+}
+
+.aceptar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #27c527;
+    border-radius: 6px;
+    border: 2px solid #35a33b;
+	margin: 20px 125px;
 
 	padding: 10px 15px;
 	font-size: 18px;
 	font-weight: 700;
-}
+  }  .aceptar:hover{
+    color: #68ad5a;
+    background-color: #ffffff;
+  }
 
 
+  .eliminar{
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffaeae;
+    border-radius: 6px;
+    border: 2px solid #995555;
+
+	font-size: 12px;
+	font-weight: 700;
+  }  .eliminar:hover{
+    color: #a01818;
+    background-color: #ffffff;
+  }
 
 

@@ -1,12 +1,12 @@
 <div class="to-do">
     <form (submit)="agregar()" >
         <input type="text" name="input-texto" class="ingreso" [(ngModel)]="inputTodo"/>
-        <input type="submit" value="Añadir" class="enviar"/>
+        <input type="submit" value="Añadir" class="aceptar"/>
     </form>
     <div *ngFor="let todo of todo2; let i = index;" class="estilo {{ (todo.completed ? 'done' : '') }}">
         <div class="id">{{ i+1 }}</div>
         <div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
-        <button class="delete" (click)="borrar(i)">Eliminar</button>
+        <button class="eliminar" (click)="borrar(i)">Eliminar</button>
         
     </div>
 </div>
